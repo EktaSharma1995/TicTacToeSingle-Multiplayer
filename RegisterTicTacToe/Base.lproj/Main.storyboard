@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-Zp-N1v">
-                                <rect key="frame" x="0.0" y="47" width="375" height="179"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmc-s7-Kch">
@@ -116,10 +116,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-1t-82l">
-                                <rect key="frame" x="0.0" y="228" width="375" height="439"/>
+                                <rect key="frame" x="0.0" y="212" width="375" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiw-c9-8ba">
@@ -130,8 +130,180 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who's the winner?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWm-wN-qDr">
+                                        <rect key="frame" x="83" y="30" width="178" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.040335521839999999" green="0.85328759519999997" blue="0.049888314269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZo-nU-KuK">
+                                        <rect key="frame" x="26" y="30" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="X" image="cross.png"/>
+                                        <connections>
+                                            <action selector="btnX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrH-8L-pcA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTV-I5-OQn">
+                                        <rect key="frame" x="335" y="28" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="O" image="nought.png"/>
+                                        <connections>
+                                            <action selector="btnO:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIl-N2-NLL"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p1Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-p8-ub1">
+                                        <rect key="frame" x="13" y="53" width="51" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p2Icono.png" translatesAutoresizingMaskIntoConstraints="NO" id="VSq-Jc-exm">
+                                        <rect key="frame" x="321" y="53" width="52" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Multi-player?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnd-8N-g35">
+                                        <rect key="frame" x="134" y="53" width="101" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00N-vp-SIr">
+                                        <rect key="frame" x="160" y="76" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEY-eW-lnw">
+                                        <rect key="frame" x="8" y="93" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAW-em-1QM">
+                                        <rect key="frame" x="307" y="94" width="68" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-xU-Hpn">
+                                        <rect key="frame" x="229" y="120" width="146" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.9350329798" green="1" blue="0.78111499829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hs-L0-9lU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-pz-QF2">
+                                        <rect key="frame" x="231" y="140" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Play" image="play.png"/>
+                                        <connections>
+                                            <action selector="btnPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8f-Am-aJw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tO-Tg-81C">
+                                        <rect key="frame" x="287" y="138" width="30" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Pause" image="pause.png"/>
+                                        <connections>
+                                            <action selector="btnPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMI-67-dhq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSE-OQ-3bl">
+                                        <rect key="frame" x="337" y="135" width="30" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stop" image="stop.png"/>
+                                        <connections>
+                                            <action selector="btnStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nD-5A-uOO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfD-h8-G4r">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="squarebox.png"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSp-u8-wjy">
+                                        <rect key="frame" x="242" y="225" width="103" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSW-FN-xu6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEm-GR-JrP">
+                                        <rect key="frame" x="29" y="222" width="100" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L68-jC-lU3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q36-gi-N1t">
+                                        <rect key="frame" x="242" y="302" width="103" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sy-aE-7mg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqc-hc-mx8">
+                                        <rect key="frame" x="29" y="302" width="100" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ur-25-GrP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IID-tG-0or">
+                                        <rect key="frame" x="134" y="302" width="100" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSx-e8-uhM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtC-2b-Pj1">
+                                        <rect key="frame" x="29" y="369" width="100" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZO-9t-EGX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-nt-uLz">
+                                        <rect key="frame" x="137" y="369" width="97" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYN-RC-MRU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9W-DP-sWl">
+                                        <rect key="frame" x="242" y="369" width="103" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smZ-66-KPf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-yb-e4f">
+                                        <rect key="frame" x="137" y="225" width="100" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEs-e1-oj1"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Game History: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2M5-mG-wib">
+                                        <rect key="frame" x="0.0" y="112" width="129" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="geB-4j-jsO">
                                 <rect key="frame" x="7" y="12" width="121" height="29"/>
@@ -151,14 +323,31 @@
                     <connections>
                         <outlet property="displayName" destination="iiw-c9-8ba" id="Qfw-bw-DSz"/>
                         <outlet property="femaleBtn" destination="kFu-Sx-mwD" id="Dfh-nl-zji"/>
+                        <outlet property="historyTextView" destination="2M5-mG-wib" id="slf-Kq-W8c"/>
                         <outlet property="labelAge" destination="xqe-T0-BXf" id="6ST-SP-ybU"/>
                         <outlet property="labelName" destination="mrl-hr-mOF" id="sY9-Em-FtP"/>
                         <outlet property="maleBtn" destination="GSK-cE-IcC" id="LmU-DQ-KPo"/>
+                        <outlet property="multiPlayerSwitch" destination="00N-vp-SIr" id="8Ks-eX-q15"/>
+                        <outlet property="p1Icon" destination="8Ds-p8-ub1" id="KGt-KY-FZH"/>
+                        <outlet property="p1ScoreLabel" destination="QEY-eW-lnw" id="ZZn-7o-Jd4"/>
+                        <outlet property="p2Icon" destination="VSq-Jc-exm" id="HHN-Fs-DiK"/>
+                        <outlet property="p2ScoreLabel" destination="AAW-em-1QM" id="uck-Kr-nTf"/>
                         <outlet property="registerView" destination="ehb-Zp-N1v" id="h5x-at-zwx"/>
                         <outlet property="segment" destination="geB-4j-jsO" id="hU0-WY-UZL"/>
                         <outlet property="textFieldAge" destination="Mc3-6F-7eF" id="Gyx-uE-Xe0"/>
                         <outlet property="textFieldName" destination="dNH-bh-F38" id="oRC-pv-akU"/>
                         <outlet property="ticTacToeView" destination="TmF-1t-82l" id="R1f-bg-EmI"/>
+                        <outlet property="winnerLabel" destination="gWm-wN-qDr" id="pAg-KV-AZQ"/>
+                        <outletCollection property="gridButtons" destination="F9W-DP-sWl" collectionClass="NSMutableArray" id="LYo-1E-Jp9"/>
+                        <outletCollection property="gridButtons" destination="qEm-GR-JrP" collectionClass="NSMutableArray" id="0iK-zw-41X"/>
+                        <outletCollection property="gridButtons" destination="hjk-yb-e4f" collectionClass="NSMutableArray" id="IeO-vF-Hj5"/>
+                        <outletCollection property="gridButtons" destination="BSp-u8-wjy" collectionClass="NSMutableArray" id="rdc-ui-q5T"/>
+                        <outletCollection property="gridButtons" destination="cqc-hc-mx8" collectionClass="NSMutableArray" id="nHQ-in-Uez"/>
+                        <outletCollection property="gridButtons" destination="IID-tG-0or" collectionClass="NSMutableArray" id="mCa-2R-lWU"/>
+                        <outletCollection property="gridButtons" destination="q36-gi-N1t" collectionClass="NSMutableArray" id="2Ex-1d-0uB"/>
+                        <outletCollection property="gridButtons" destination="CtC-2b-Pj1" collectionClass="NSMutableArray" id="uUr-5c-n8v"/>
+                        <outletCollection property="gridButtons" destination="utJ-nt-uLz" collectionClass="NSMutableArray" id="QRH-Zw-AXI"/>
+                        <outletCollection property="gridButtons" destination="F9W-DP-sWl" collectionClass="NSMutableArray" id="w4L-Jx-3zw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -166,4 +355,14 @@
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cross.png" width="437" height="438"/>
+        <image name="nought.png" width="439" height="439"/>
+        <image name="p1Icon.png" width="300" height="300"/>
+        <image name="p2Icono.png" width="300" height="300"/>
+        <image name="pause.png" width="125" height="125"/>
+        <image name="play.png" width="125" height="125"/>
+        <image name="squarebox.png" width="1129" height="1489"/>
+        <image name="stop.png" width="125" height="125"/>
+    </resources>
 </document>

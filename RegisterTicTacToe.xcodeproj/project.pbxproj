@@ -15,6 +15,15 @@
 		A26922812198FB3E00E046E9 /* RegisterTicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26922802198FB3E00E046E9 /* RegisterTicTacToeTests.swift */; };
 		A269228C2198FB3E00E046E9 /* RegisterTicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269228B2198FB3E00E046E9 /* RegisterTicTacToeUITests.swift */; };
 		A269229C219905F100E046E9 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A269229A219905F000E046E9 /* DLRadioButton.m */; };
+		A269229E21990FC900E046E9 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A269229D21990FC900E046E9 /* cross.png */; };
+		A26922A021990FF200E046E9 /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = A269229F21990FF200E046E9 /* nought.png */; };
+		A26922A22199104800E046E9 /* p1Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922A12199104800E046E9 /* p1Icon.png */; };
+		A26922A42199105100E046E9 /* p2Icono.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922A32199105100E046E9 /* p2Icono.png */; };
+		A26922A62199105D00E046E9 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922A52199105D00E046E9 /* pause.png */; };
+		A26922A82199106500E046E9 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922A72199106500E046E9 /* play.png */; };
+		A26922AA2199106D00E046E9 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922A92199106C00E046E9 /* stop.png */; };
+		A26922AC2199125C00E046E9 /* squarebox.png in Resources */ = {isa = PBXBuildFile; fileRef = A26922AB2199125B00E046E9 /* squarebox.png */; };
+		A26922AE21991B3100E046E9 /* Spring-In-My-Step.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A26922AD21991B3100E046E9 /* Spring-In-My-Step.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		A2692299219905EF00E046E9 /* RegisterTicTacToe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RegisterTicTacToe-Bridging-Header.h"; sourceTree = "<group>"; };
 		A269229A219905F000E046E9 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		A269229B219905F000E046E9 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		A269229D21990FC900E046E9 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		A269229F21990FF200E046E9 /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		A26922A12199104800E046E9 /* p1Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1Icon.png; sourceTree = "<group>"; };
+		A26922A32199105100E046E9 /* p2Icono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2Icono.png; sourceTree = "<group>"; };
+		A26922A52199105D00E046E9 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		A26922A72199106500E046E9 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A26922A92199106C00E046E9 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		A26922AB2199125B00E046E9 /* squarebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarebox.png; sourceTree = "<group>"; };
+		A26922AD21991B3100E046E9 /* Spring-In-My-Step.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spring-In-My-Step.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +122,16 @@
 				A269226B2198FB3800E046E9 /* AppDelegate.swift */,
 				A269226D2198FB3800E046E9 /* ViewController.swift */,
 				A269226F2198FB3800E046E9 /* Main.storyboard */,
+				A26922A32199105100E046E9 /* p2Icono.png */,
+				A26922A52199105D00E046E9 /* pause.png */,
+				A26922A72199106500E046E9 /* play.png */,
+				A26922AB2199125B00E046E9 /* squarebox.png */,
+				A26922A12199104800E046E9 /* p1Icon.png */,
+				A269229F21990FF200E046E9 /* nought.png */,
+				A26922A92199106C00E046E9 /* stop.png */,
+				A269229D21990FC900E046E9 /* cross.png */,
 				A26922722198FB3E00E046E9 /* Assets.xcassets */,
+				A26922AD21991B3100E046E9 /* Spring-In-My-Step.mp3 */,
 				A26922742198FB3E00E046E9 /* LaunchScreen.storyboard */,
 				A269229B219905F000E046E9 /* DLRadioButton.h */,
 				A269229A219905F000E046E9 /* DLRadioButton.m */,
@@ -238,8 +265,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26922762198FB3E00E046E9 /* LaunchScreen.storyboard in Resources */,
+				A26922AA2199106D00E046E9 /* stop.png in Resources */,
+				A26922AE21991B3100E046E9 /* Spring-In-My-Step.mp3 in Resources */,
+				A26922A42199105100E046E9 /* p2Icono.png in Resources */,
+				A26922A82199106500E046E9 /* play.png in Resources */,
+				A26922A62199105D00E046E9 /* pause.png in Resources */,
+				A26922A021990FF200E046E9 /* nought.png in Resources */,
 				A26922732198FB3E00E046E9 /* Assets.xcassets in Resources */,
+				A269229E21990FC900E046E9 /* cross.png in Resources */,
 				A26922712198FB3800E046E9 /* Main.storyboard in Resources */,
+				A26922AC2199125C00E046E9 /* squarebox.png in Resources */,
+				A26922A22199104800E046E9 /* p1Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
