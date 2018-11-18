@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A24FA8A2219FA00700492461 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = A24FA8A1219FA00700492461 /* test.txt */; };
 		A269226C2198FB3800E046E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269226B2198FB3800E046E9 /* AppDelegate.swift */; };
 		A269226E2198FB3800E046E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269226D2198FB3800E046E9 /* ViewController.swift */; };
 		A26922712198FB3800E046E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269226F2198FB3800E046E9 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A24FA8A1219FA00700492461 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		A26922682198FB3800E046E9 /* RegisterTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A269226B2198FB3800E046E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A269226D2198FB3800E046E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				A269226F2198FB3800E046E9 /* Main.storyboard */,
 				A26922A32199105100E046E9 /* p2Icono.png */,
 				A26922A52199105D00E046E9 /* pause.png */,
+				A24FA8A1219FA00700492461 /* test.txt */,
 				A26922A72199106500E046E9 /* play.png */,
 				A26922AB2199125B00E046E9 /* squarebox.png */,
 				A26922A12199104800E046E9 /* p1Icon.png */,
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24FA8A2219FA00700492461 /* test.txt in Resources */,
 				A26922762198FB3E00E046E9 /* LaunchScreen.storyboard in Resources */,
 				A26922AA2199106D00E046E9 /* stop.png in Resources */,
 				A26922AE21991B3100E046E9 /* Spring-In-My-Step.mp3 in Resources */,

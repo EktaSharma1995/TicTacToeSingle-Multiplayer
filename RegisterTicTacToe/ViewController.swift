@@ -32,6 +32,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
     
     @IBOutlet weak var femaleBtn: DLRadioButton!
     
+    let myFileURL = Bundle.main.path(forResource: "test", ofType: "txt")
+    
+    @IBOutlet weak var showInfo: UILabel!
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textFieldName.resignFirstResponder()
         textFieldAge.resignFirstResponder()
@@ -47,15 +51,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
             ticTacToeView.isHidden = false
         }
     }
-    
-    
-    @IBAction func registerButton(_ sender: Any) {
-        displayName.text = "Welcome " + textFieldName.text!
-        registerView.isHidden = true
-        ticTacToeView.isHidden = false
-        segment.selectedSegmentIndex = 1
-    }
-    
     
     @IBAction func radioBtnAction(_ sender: DLRadioButton) {
         if sender.tag == 1{
@@ -87,11 +82,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
     
     var currentPlayer : Int = 1
     
-        @IBOutlet weak var historyTextView: UITextView!
+    @IBOutlet weak var historyTextView: UITextView!
     
     var p1Score : Int = 0
     var p2Score : Int = 0
-    
     
     func start(){
         grid = [[0, 0, 0] , [0, 0, 0], [0, 0, 0]]
@@ -325,6 +319,45 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
             elapsedTime = 0
         }
     }
+    
+    @IBAction func registerButton(_ sender: Any) {
+        displayName.text = "Welcome " + textFieldName.text!
+        registerView.isHidden = true
+        ticTacToeView.isHidden = false
+        segment.selectedSegmentIndex = 1
+        
+    }
+    
+    
+    @IBAction func readFromFile(_ sender: Any) {
+        //to read
+        var getFileContent = ""
+        do{
+            getFileContent += try String(contentsOfFile: myFileURL!, encoding: String.Encoding.utf8)
+        }catch let error as NSError{
+            print("Failed due to \(error)")
+        }
+        showInfo.text = getFileContent
+        
+    }
+    
+    
+    @IBAction func writeToFile(_ sender: Any) {
+        
+        let newString = "Name:\(textFieldName.text ?? "nil")) P1:\(p1Score)) P2:\(p2Score))"
+        
+        print(p1Score)
+        print(p2Score)
+        do {
+            try newString.write(to: Bundle.main.url(forResource: "test", withExtension: "txt")!, atomically: true, encoding: String.Encoding.utf8)
+            
+        }catch let error as NSError{
+            print("\(error)")
+        }
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
